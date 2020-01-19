@@ -1,0 +1,17 @@
+
+  {
+      "skills": {
+        "languages": {
+          "title_1": "JavaScript",
+          "title_2": "HTML",
+          "title_3": "CSS"
+        },
+      "frameworks": {
+        "framework_1": "ReactJS"
+      },
+      "tools": {
+        "tool_1": "AdobeXD",
+        "tool_2": "Photoshop"
+      }
+    }
+  }

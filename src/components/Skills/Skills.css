@@ -1,9 +1,16 @@
-p {
-  margin: 0;
-  font-weight: 300;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  color: #8b8b8b;
+.Skills {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Title {
+  background-color: aqua;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
@@ -12,10 +19,6 @@ h1 {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   color: #8b8b8b;
-}
-
-.skills {
-  padding: 10px;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {

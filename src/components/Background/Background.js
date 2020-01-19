@@ -1,28 +1,13 @@
-import React, { Component } from "react";
-// Grid
-import Grid from "@material-ui/core/Grid";
+import React from "react";
 // CSS
 import "./Background.css";
 
-class Background extends Component {
-  render() {
-    return (
-      <div className="Background">
-        <Grid
-          container
-          direction="row"
-          justify="center"
-          alignItems="flex-start"
-        >
-          <Grid item xs={12} sm={12}>
-            <div className="Background" style={{ margin: 0 }}>
-              <p></p>
-            </div>
-          </Grid>
-        </Grid>
-      </div>
-    );
-  }
-}
+const background = props => (
+  <React.Fragment>
+    <div className="Background">
+      <h1>Background</h1>
+    </div>
+  </React.Fragment>
+);
 
-export default Background;
+export default background;

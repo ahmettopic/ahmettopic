@@ -3,8 +3,6 @@ import React, { Component } from "react";
 import Welcome from "../components/Welcome/Welcome";
 import Background from "../components/Background/Background";
 import Skills from "../components/Skills/Skills";
-// Components
-// import withErrorHandler from "../withErrorHandler/withErrorHandler";
 
 class Layout extends Component {
   render() {
