@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 // CSS
 import "./Skills.css";
+// Axios
+import axios from "../../axios-data";
 
-class skill extends Component {
+class Skills extends Component {
   state = {
     skills: [
       { LangName: "Languages", languages: "JavaScript HTML CSS" },
@@ -10,6 +12,13 @@ class skill extends Component {
       { ToolName: "Tools", tools: "Firebase AdobeXD Photoshop" }
     ]
   };
+
+  componentDidMount() {
+    axios.get("https://ahmettopic-4ff91.firebaseio.com/data").then(response => {
+      this.setState({ data: response.data });
+    });
+  }
+
   render() {
     return (
       <div>
@@ -36,4 +45,4 @@ class skill extends Component {
   }
 }
 
-export default skill;
+export default Skills;

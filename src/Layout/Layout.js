@@ -4,16 +4,9 @@ import Welcome from "../components/Welcome/Welcome";
 import Background from "../components/Background/Background";
 import Skills from "../components/Skills/Skills";
 // Components
-import withErrorHandler from "../withErrorHandler/withErrorHandler";
-// Axios
-import axios from "../axios-data";
+// import withErrorHandler from "../withErrorHandler/withErrorHandler";
 
-axios.post("/data.json");
-
-//
 class Layout extends Component {
-  state = {};
-
   render() {
     return (
       <div className="Layout">
@@ -25,4 +18,5 @@ class Layout extends Component {
   }
 }
 
-export default withErrorHandler(Layout);
+// export default withErrorHandler(Layout);
+export default Layout;
