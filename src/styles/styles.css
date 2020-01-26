@@ -1,0 +1,31 @@
+.Welcome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  height: 60vh;
+  /*# sourceMappingURL=Welcome.css.map */
+}
+
+.Welcome h1 {
+  margin: 0;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+  font-size: 48px;
+  color: #8b8b8b;
+}
+
+.Welcome p {
+  margin: 0;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+  font-size: 26px;
+  color: #8b8b8b;
+}
+/*# sourceMappingURL=styles.css.map */

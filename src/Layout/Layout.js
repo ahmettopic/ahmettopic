@@ -6,8 +6,9 @@ import React, { Component } from "react";
 class Layout extends Component {
   render() {
     return (
-      <div className="Layout">{/* <Background />
-        <Skills /> */}</div>
+      <div className="Layout">
+        <p>AppBar</p>
+      </div>
     );
   }
 }
