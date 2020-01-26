@@ -1,24 +1,54 @@
+h1 {
+  margin: 0;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+  font-size: 48px;
+  color: #8b8b8b;
+}
+
+p {
+  margin: 0;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+  font-size: 26px;
+  color: #8b8b8b;
+}
+
 .Welcome {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 60vh;
+  height: 40vh;
+}
 
-  h1 {
-    margin: 0;
-    font-weight: 300;
-    font-family: 'Roboto', sans-serif;
-    font-size: 48px;
-    color: #8b8b8b;
-  }
+
+.AppBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 5vh;
 
   p {
-    margin: 0;
-    font-weight: 300;
-    font-family: 'Roboto', sans-serif;
-    font-size: 26px;
-    color: #8b8b8b;
+    margin-right: 10px;
+    font-size: 16px;
+    text-decoration: none;
   }
-  /*# sourceMappingURL=Welcome.css.map */
+
+  a:visited, a:link {
+    text-decoration: none;
+  }
+
+  p:hover {
+    color: #ff1852;
+  }
+}
+
+.Layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 20vh;
 }

@@ -1,3 +1,19 @@
+h1 {
+  margin: 0;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+  font-size: 48px;
+  color: #8b8b8b;
+}
+
+p {
+  margin: 0;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+  font-size: 26px;
+  color: #8b8b8b;
+}
+
 .Welcome {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9,23 +25,48 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  height: 60vh;
-  /*# sourceMappingURL=Welcome.css.map */
+  height: 40vh;
 }
 
-.Welcome h1 {
-  margin: 0;
-  font-weight: 300;
-  font-family: 'Roboto', sans-serif;
-  font-size: 48px;
-  color: #8b8b8b;
+.AppBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  min-height: 5vh;
 }
 
-.Welcome p {
-  margin: 0;
-  font-weight: 300;
-  font-family: 'Roboto', sans-serif;
-  font-size: 26px;
-  color: #8b8b8b;
+.AppBar p {
+  margin-right: 10px;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.AppBar a:visited, .AppBar a:link {
+  text-decoration: none;
+}
+
+.AppBar p:hover {
+  color: #ff1852;
+}
+
+.Layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  height: 20vh;
 }
 /*# sourceMappingURL=styles.css.map */

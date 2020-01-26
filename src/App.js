@@ -7,9 +7,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Welcome name="Ahmet Topic">
-          <p>Fullstack Web Developer</p>
-        </Welcome>
+        <Welcome name="Ahmet Topic">Fullstack Web Developer</Welcome>
         <Layout />
       </div>
     );
