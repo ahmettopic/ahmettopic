@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 // JSON Data
-import data from "../../data/data.json";
+import skills from "../../data/skills.json";
 
 import "./Skills.css";
 
@@ -10,10 +10,10 @@ class Skills extends Component {
       <React.Fragment>
         <div className="Skills">
           <h1>Skills</h1>
-          {data.map((skillDetail, index) => {
+          {skills.map((skills, index) => {
             return (
               <div className="Title">
-                <p>{skillDetail.title}</p>
+                <p>{skills.title}</p>
               </div>
             );
           })}

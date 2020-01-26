@@ -1,10 +1,16 @@
 import React, { Component } from "react";
 // Components
 import Layout from "./Layout/Layout";
+import Welcome from "./components/Welcome/Welcome";
 
 class App extends Component {
   render() {
-    return <Layout />;
+    return (
+      <div>
+        <Welcome name="Ahmet Topic">Fullstack Web Developer</Welcome>
+        <Layout />
+      </div>
+    );
   }
 }
 
