@@ -2,12 +2,12 @@ import React from "react";
 // CSS
 import "../../styles/styles.css";
 
-const background = props => (
+const blog = props => (
   <React.Fragment>
-    <div className="Background">
-      <p>Background</p>
+    <div className="Blog">
+      <p>Blog</p>
     </div>
   </React.Fragment>
 );
 
-export default background;
+export default blog;

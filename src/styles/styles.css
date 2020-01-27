@@ -10,7 +10,7 @@ p {
   margin: 0;
   font-weight: 300;
   font-family: 'Roboto', sans-serif;
-  font-size: 26px;
+  font-size: 16px;
   color: #8b8b8b;
 }
 
@@ -25,7 +25,21 @@ p {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  height: 40vh;
+  height: 30vh;
+}
+
+.Icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  text-align: center;
+  height: 10vh;
 }
 
 .AppBar {
@@ -43,7 +57,7 @@ p {
 }
 
 .AppBar p {
-  margin-right: 10px;
+  margin: 5px;
   font-size: 16px;
   text-decoration: none;
 }
@@ -57,16 +71,8 @@ p {
 }
 
 .Layout {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  height: 20vh;
+  margin: 5px;
+  padding: 10px;
+  height: 50vh;
 }
 /*# sourceMappingURL=styles.css.map */

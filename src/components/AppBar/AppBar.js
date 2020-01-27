@@ -9,20 +9,20 @@ function AppBar() {
     <React.Fragment>
       <div className="AppBar">
         {/* Background */}
-        <Link to="/background">
-          <p>Background</p>
+        <Link to="/about">
+          <p>About</p>
         </Link>
         {/* Skills */}
         <Link to="/skills">
           <p>Skills</p>
         </Link>
         {/* Experience */}
-        <Link to="/experience">
-          <p>Experience</p>
+        <Link to="/portfolio">
+          <p>Portfolio</p>
         </Link>
-        {/* Projects */}
-        <Link to="/projects">
-          <p>Projects</p>
+        {/* Blog */}
+        <Link to="/blog">
+          <p>Blog</p>
         </Link>
       </div>
     </React.Fragment>

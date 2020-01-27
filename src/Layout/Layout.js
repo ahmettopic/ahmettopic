@@ -3,10 +3,10 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // Route Components
 import AppBar from "../components/AppBar/AppBar";
-import Background from "../components/Background/Background";
+import About from "../components/About/About";
 import Skills from "../components/Skills/Skills";
-import Experiance from "../components/Experience/Experience";
-import Projects from "../components/Projects/Projects";
+import Portfolio from "../components/Portfolio/Portfolio";
+import Blog from "../components/Blog/Blog";
 // Styles
 import "../styles/styles.css";
 
@@ -14,15 +14,15 @@ class Layout extends Component {
   render() {
     return (
       <Router>
-        <AppBar />
         <div className="Layout">
           <Switch>
-            <Route path="/background" component={Background} />
+            <Route path="/about" component={About} />
             <Route path="/skills" component={Skills} />
-            <Route path="/experience" component={Experiance} />
-            <Route path="/projects" component={Projects} />
+            <Route path="/portfolio" component={Portfolio} />
+            <Route path="/blog" component={Blog} />
           </Switch>
         </div>
+        <AppBar />
       </Router>
     );
   }
