@@ -11,9 +11,9 @@ class About extends Component {
     return (
       <React.Fragment>
         <div className="About">
-          {about.map((about, index) => {
+          {about.map((about, id) => {
             return (
-              <div>
+              <div key={id} className="Image">
                 <p>{about.lead_1}</p>
                 <img src={Portrait} alt="Portrait" style={{ width: "70%" }} />
               </div>

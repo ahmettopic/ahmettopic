@@ -9,9 +9,9 @@ class Skills extends Component {
     return (
       <React.Fragment>
         <div className="Skills">
-          {skills.map((skills, index) => {
+          {skills.map((skills, id) => {
             return (
-              <div className="Title">
+              <div key={id} className="Title">
                 <p>{skills.title}</p>
               </div>
             );
