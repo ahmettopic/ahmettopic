@@ -13,12 +13,10 @@ class About extends Component {
         <div className="About">
           {about.map((about, index) => {
             return (
-              <React.Fragement>
-                <div>
-                  <p>{about.lead_1}</p>
-                  <img src={Portrait} alt="Portrait" style={{ width: "70%" }} />
-                </div>
-              </React.Fragement>
+              <div>
+                <p>{about.lead_1}</p>
+                <img src={Portrait} alt="Portrait" style={{ width: "70%" }} />
+              </div>
             );
           })}
         </div>
