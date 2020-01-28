@@ -7,9 +7,6 @@ import About from "../components/About/About";
 import Skills from "../components/Skills/Skills";
 import Portfolio from "../components/Portfolio/Portfolio";
 import Blog from "../components/Blog/Blog";
-// Material UI
-// Material UI
-import Grid from "@material-ui/core/Grid";
 // Styles
 import "../styles/styles.css";
 
@@ -18,14 +15,12 @@ class Layout extends Component {
     return (
       <Router>
         <div className="Layout">
-          <Grid container>
-            <Switch>
-              <Route path="/about" component={About} />
-              <Route path="/skills" component={Skills} />
-              <Route path="/portfolio" component={Portfolio} />
-              <Route path="/blog" component={Blog} />
-            </Switch>
-          </Grid>
+          <Switch>
+            <Route path="/about" component={About} />
+            <Route path="/skills" component={Skills} />
+            <Route path="/portfolio" component={Portfolio} />
+            <Route path="/blog" component={Blog} />
+          </Switch>
         </div>
         <AppBar />
       </Router>
