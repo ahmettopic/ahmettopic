@@ -3,15 +3,14 @@ h1 {
   font-weight: 300;
   font-family: 'Roboto', sans-serif;
   font-size: 48px;
-  color: #8b8b8b;
+  color: white;
 }
 
 p {
-  margin: 0;
+  margin: 2px;
   font-weight: 300;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  color: #8b8b8b;
 }
 
 .Welcome {
@@ -25,7 +24,21 @@ p {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  height: 30vh;
+  height: 40vh;
+  background: #195cad;
+}
+
+.About {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
 .Icons {
@@ -35,11 +48,11 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
-  height: 10vh;
+  height: 5vh;
 }
 
 .AppBar {
@@ -57,22 +70,20 @@ p {
 }
 
 .AppBar p {
-  margin: 5px;
-  font-size: 16px;
+  margin: 3px;
+  font-size: 14px;
+  text-transform: uppercase;
   text-decoration: none;
+  color: #5a5a5a;
 }
 
 .AppBar a:visited, .AppBar a:link {
   text-decoration: none;
 }
 
-.AppBar p:hover {
-  color: #ff1852;
-}
-
 .Layout {
   margin: 5px;
   padding: 10px;
-  height: 50vh;
+  height: 40vh;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -11,10 +11,6 @@ const welcome = props => {
           <p>{props.children}</p>
         </div>
       </div>
-      <div className="Icons">
-        <p>LinkedIn</p>
-        <p>GitHub</p>
-      </div>
     </React.Fragment>
   );
 };
