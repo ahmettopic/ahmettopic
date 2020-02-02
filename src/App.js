@@ -7,11 +7,12 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Welcome name="Ahmet Topic">Fullstack Web Developer</Welcome>
+        <Welcome name="PORTFOLIO">
+          Ahmet Topic / Fullstack Web Developer
+        </Welcome>
         <Layout />
       </div>
     );
   }
 }
-
 export default App;

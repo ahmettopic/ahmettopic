@@ -1,10 +1,8 @@
 import React, { Component } from "react";
 // CSS
 import "../../styles/styles.css";
-// Picture
-import Portrait from "../../assets/portrait_1.png";
 // JSON Data
-import about from "../../data/about.json";
+import about from "./about.json";
 
 class About extends Component {
   render() {
@@ -15,7 +13,6 @@ class About extends Component {
             return (
               <div key={id} className="Image">
                 <p>{about.lead_1}</p>
-                <img src={Portrait} alt="Portrait" style={{ width: "70%" }} />
               </div>
             );
           })}
