@@ -1,17 +1,22 @@
-import React, { Component } from "react";
+import React, { Component, lazy, Suspense } from "react";
 // Components
-import Layout from "./Layout/Layout";
 import Welcome from "./components/Welcome/Welcome";
+// LazyLoad
+const Layout = lazy(() => import("./Layout/Layout"));
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <Welcome name="PORTFOLIO">
-          Ahmet Topic / Fullstack Web Developer
-        </Welcome>
-        <Layout />
-      </div>
+      <React.Fragment>
+        <div>
+          <Welcome name="PORTFOLIO">
+            Ahmet Topic / Fullstack Web Developer
+          </Welcome>
+          <Suspense fallback={<p>SPINNER</p>}>
+            <Layout />
+          </Suspense>
+        </div>
+      </React.Fragment>
     );
   }
 }
