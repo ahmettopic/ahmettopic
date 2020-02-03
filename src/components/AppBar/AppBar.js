@@ -23,8 +23,8 @@ function AppBar() {
             <p>Portfolio</p>
           </Link>
 
-          <Link to="/blog">
-            <p>Blog</p>
+          <Link to="/contact">
+            <p>Contact</p>
           </Link>
         </Grid>
       </div>

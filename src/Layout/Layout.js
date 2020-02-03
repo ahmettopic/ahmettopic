@@ -6,7 +6,7 @@ import AppBar from "../components/AppBar/AppBar";
 import About from "../components/About/About";
 import SkillsList from "../components/Skills/SkillList";
 import Portfolio from "../components/Portfolio/Portfolio";
-import Blog from "../components/Blog/Blog";
+import Contact from "../components/Contact/Contact";
 // Styles
 import "../styles/styles.css";
 
@@ -19,7 +19,7 @@ class Layout extends Component {
             <Route path="/about" component={About} />
             <Route path="/skills" component={SkillsList} />
             <Route path="/portfolio" component={Portfolio} />
-            <Route path="/blog" component={Blog} />
+            <Route path="/contact" component={Contact} />
           </Switch>
         </div>
         <AppBar />

@@ -2,12 +2,12 @@ import React from "react";
 // CSS
 import "../../styles/styles.css";
 
-const blog = props => (
+const contact = props => (
   <React.Fragment>
-    <div className="Blog">
-      <p>Blog</p>
+    <div className="Contact">
+      <p>Contact</p>
     </div>
   </React.Fragment>
 );
 
-export default blog;
+export default contact;
