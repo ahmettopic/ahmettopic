@@ -50,6 +50,20 @@ p {
   text-align: center;
 }
 
+.SnackBar {
+  background-color: #d82d2d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  height: 10vh;
+}
+
+.SnackBar p {
+  padding: 10px;
+  text-decoration: underline;
+}
+
 .AppBar {
   display: -webkit-box;
   display: -ms-flexbox;

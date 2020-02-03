@@ -1,6 +1,19 @@
-import React from "react";
+import React, { Component } from "react";
+// Material Grid
+import Grid from "@material-ui/core/Grid";
+// Styles
 import "../../styles/styles.css";
 
-const snackbar = props => <div className="SnackBar">{props.children}</div>;
+class SnackBar extends Component {
+  render() {
+    return (
+      <div className="SnackBar">
+        <Grid container direction="row" justify="center" alignItems="center">
+          <p>Release 2.0 is finally here!</p>
+        </Grid>
+      </div>
+    );
+  }
+}
 
-export default snackbar;
+export default SnackBar;

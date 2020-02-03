@@ -3,7 +3,7 @@ import React from "react";
 import Grid from "@material-ui/core/Grid";
 
 const spinner = () => (
-  <div className="Spinner">
+  <div>
     <Grid container direction="row" justify="center" alignItems="center">
       <p>LOADING</p>
     </Grid>
