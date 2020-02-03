@@ -8,14 +8,12 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <div>
-          <Welcome name="PORTFOLIO">
-            Ahmet Topic / Fullstack Web Developer
-          </Welcome>
-          <Suspense fallback={<p>SPINNER</p>}>
-            <Layout />
-          </Suspense>
-        </div>
+        <Welcome name="PORTFOLIO">
+          Ahmet Topic / Fullstack Web Developer
+        </Welcome>
+        <Suspense fallback={<p>SPINNER</p>}>
+          <Layout />
+        </Suspense>
       </React.Fragment>
     );
   }

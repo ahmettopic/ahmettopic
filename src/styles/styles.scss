@@ -1,8 +1,11 @@
+body {
+  background-color: #f8f8f8
+}
 h1 {
   margin: 0;
   font-weight: 300;
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 116px;
+  font-size: 62px;
 }
 
 p {
@@ -12,38 +15,30 @@ p {
   font-size: 16px;
 }
 
-ul li {
-  list-style-type: none;
-}
-
 .Welcome {
   display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
-  height: 40vh;
+  height: 30vh;
 }
-
 .About {
   display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
 }
-
-.Icons {
+.SkillItem{
+  width: 120px;
+  margin: 12px 6px;
   display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
-  height: 5vh;
+  justify-content: center;
 }
 
+.SkillList {
+  display: flex;
+  text-align: center;
+}
 
 .AppBar {
   display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   min-height: 5vh;
 
@@ -61,7 +56,5 @@ ul li {
 }
 
 .Layout {
-  margin: 5px;
-  padding: 10px;
-  height: 40vh;
+  height: 60vh;
 }

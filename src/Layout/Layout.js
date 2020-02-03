@@ -17,10 +17,7 @@ class Layout extends Component {
         <div className="Layout">
           <Switch>
             <Route path="/about" component={About} />
-            <Route
-              path="/skills"
-              component={SkillsList}
-            />
+            <Route path="/skills" component={SkillsList} />
             <Route path="/portfolio" component={Portfolio} />
             <Route path="/blog" component={Blog} />
           </Switch>
@@ -31,5 +28,4 @@ class Layout extends Component {
   }
 }
 
-// export default withErrorHandler(Layout);
 export default Layout;
