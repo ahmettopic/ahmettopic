@@ -12,7 +12,7 @@ class About extends Component {
       <React.Fragment>
         <div className="About">
           <Grid container direction="row" justify="center" alignItems="center">
-            <Grid item xs={12} sm={4}>
+            <Grid item xs={12} sm={5}>
               {about.map((about, id) => {
                 return (
                   <div className="AboutLeft">
@@ -21,7 +21,7 @@ class About extends Component {
                 );
               })}
             </Grid>
-            <Grid item xs={12} sm={4}>
+            <Grid item xs={12} sm={5}>
               <div className="AboutRight">
                 <p>BILD</p>
               </div>

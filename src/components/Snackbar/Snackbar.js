@@ -9,7 +9,11 @@ class SnackBar extends Component {
     return (
       <div className="SnackBar">
         <Grid container direction="row" justify="center" alignItems="center">
-          <p>Release 2.0 is finally here!</p>
+          <Grid item xs={12}>
+            <p>
+              New <u>release</u> is finally deployed!
+            </p>
+          </Grid>
         </Grid>
       </div>
     );

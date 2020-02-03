@@ -8,7 +8,9 @@ const portfolio = props => (
   <React.Fragment>
     <div className="Portfolio">
       <Grid container direction="row" justify="center" alignItems="center">
-        <p>Bild</p>
+        <Grid item>
+          <p>Portfolio</p>
+        </Grid>
       </Grid>
     </div>
   </React.Fragment>
