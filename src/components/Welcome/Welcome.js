@@ -1,21 +1,23 @@
 import React from "react";
 // Material Grid
 import Grid from "@material-ui/core/Grid";
-// CSS
-import "../../styles/styles.css";
+// Styled Components
+import StyledDiv from "../../styles/StyledDiv";
+import StyledParagraph from "../../styles/StyledParagraph";
+import StyledHeading from "../../styles/StyledHeading";
 
 const welcome = props => {
   return (
-    <React.Fragment>
-      <div className="Welcome">
-        <Grid container direction="row" justify="center" alignItems="center">
-          <div>
-            <h1>{props.name}</h1>
-            <p>{props.children}</p>
-          </div>
+    <StyledDiv style={{ height: "25vh", textAlign: "center" }}>
+      <Grid container direction="row">
+        <Grid item xs>
+          <StyledHeading>Portfolio</StyledHeading>
+          <StyledParagraph>
+            Ahmet Topic / Full Stack Web Developer
+          </StyledParagraph>
         </Grid>
-      </div>
-    </React.Fragment>
+      </Grid>
+    </StyledDiv>
   );
 };
 

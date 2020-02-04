@@ -3,8 +3,6 @@ import React, { Component } from "react";
 import Skill from "./Skill";
 // Material Grid
 import Grid from "@material-ui/core/Grid";
-// Styles
-import "../../styles/styles.css";
 // Icons
 import {
   DiJavascript1,
@@ -29,15 +27,11 @@ class SkillsList extends Component {
 
   render() {
     return (
-      <React.Fragment>
-        <div className="SkillList">
-          <Grid container direction="row" justify="center" alignItems="center">
-            {this.state.skills.map(skill => {
-              return <Skill icon={skill.icon} name={skill.name}></Skill>;
-            })}
-          </Grid>
-        </div>
-      </React.Fragment>
+      <Grid container direction="row" justify="center" alignItems="center">
+        {this.state.skills.map((skill, id) => {
+          return <Skill key={id} icon={skill.icon} name={skill.name}></Skill>;
+        })}
+      </Grid>
     );
   }
 }

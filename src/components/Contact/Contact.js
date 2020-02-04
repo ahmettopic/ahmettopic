@@ -1,19 +1,18 @@
 import React from "react";
 // Material Grid
 import Grid from "@material-ui/core/Grid";
-// CSS
-import "../../styles/styles.css";
+// Styled Components
+import StyledDiv from "../../styles/StyledDiv";
+import StyledParagraph from "../../styles/StyledParagraph";
 
 const contact = props => (
-  <React.Fragment>
-    <div className="Contact">
-      <Grid container direction="row" justify="center" alignItems="center">
-        <Grid item>
-          <p>Contact</p>
-        </Grid>
+  <StyledDiv>
+    <Grid container direction="row">
+      <Grid item>
+        <StyledParagraph>Contact</StyledParagraph>
       </Grid>
-    </div>
-  </React.Fragment>
+    </Grid>
+  </StyledDiv>
 );
 
 export default contact;

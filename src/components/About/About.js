@@ -1,34 +1,31 @@
 import React, { Component } from "react";
 // Material Grid
 import Grid from "@material-ui/core/Grid";
-// CSS
-import "../../styles/styles.css";
 // JSON Data
 import about from "./about.json";
+// Styled Components
+import StyledDiv from "../../styles/StyledDiv";
+import StyledParagraph from "../../styles/StyledParagraph";
 
 class About extends Component {
   render() {
     return (
-      <React.Fragment>
-        <div className="About">
-          <Grid container direction="row" justify="center" alignItems="center">
-            <Grid item xs={12} sm={5}>
-              {about.map((about, id) => {
-                return (
-                  <div className="AboutLeft">
-                    <p>{about.lead_1}</p>
-                  </div>
-                );
-              })}
-            </Grid>
-            <Grid item xs={12} sm={5}>
-              <div className="AboutRight">
-                <p>BILD</p>
-              </div>
-            </Grid>
+      <StyledDiv>
+        <Grid container direction="row">
+          <Grid item xs={12} sm={8}>
+            {about.map((about, id) => {
+              return (
+                <StyledParagraph key={id} style={{ textAlign: "flex-start" }}>
+                  {about.lead_1}
+                </StyledParagraph>
+              );
+            })}
           </Grid>
-        </div>
-      </React.Fragment>
+          <Grid item xs={12} sm={4}>
+            <StyledParagraph style={{ textAlign: "center" }}></StyledParagraph>
+          </Grid>
+        </Grid>
+      </StyledDiv>
     );
   }
 }
