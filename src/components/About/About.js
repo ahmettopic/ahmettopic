@@ -12,7 +12,7 @@ class About extends Component {
     return (
       <StyledDiv>
         <Grid container direction="row">
-          <Grid item xs={12} sm={8}>
+          <Grid item xs={12} sm={6}>
             {about.map((about, id) => {
               return (
                 <StyledParagraph key={id} style={{ textAlign: "flex-start" }}>
@@ -21,7 +21,7 @@ class About extends Component {
               );
             })}
           </Grid>
-          <Grid item xs={12} sm={4}>
+          <Grid item xs={12} sm={6}>
             <StyledParagraph style={{ textAlign: "center" }}></StyledParagraph>
           </Grid>
         </Grid>

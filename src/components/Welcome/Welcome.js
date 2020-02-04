@@ -8,7 +8,9 @@ import StyledHeading from "../../styles/StyledHeading";
 
 const welcome = props => {
   return (
-    <StyledDiv style={{ height: "25vh", textAlign: "center" }}>
+    <StyledDiv
+      style={{ height: "25vh", alignItems: "center", textAlign: "center" }}
+    >
       <Grid container direction="row">
         <Grid item xs>
           <StyledHeading>Portfolio</StyledHeading>
