@@ -5,7 +5,6 @@ const GlobalStyle = createGlobalStyle`
 
   body, html {
     margin: 0;
-    height: 100vh;
     font-size: 16px;
     font-weight: 300;
     font-family: "Roboto Condensed", sans-serif;

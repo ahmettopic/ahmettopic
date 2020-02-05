@@ -1,22 +1,22 @@
 // React
-import React from "react";
+import React, { Component } from "react";
 import { Link } from "react-router-dom";
 // Material Grid
 import Grid from "@material-ui/core/Grid";
 // Styled Components
-import StyledDiv from "../../styles/StyledDiv";
 import StyledParagraph from "../../styles/StyledParagraph";
 
-function AppBar() {
-  const AppBarStyle = {
-    textTransform: "uppercase",
-    textDecoration: "none",
-    color: "black",
-    margin: "5px"
-  };
+const AppBarStyle = {
+  margin: "5px",
+  height: "15vh",
+  textTransform: "uppercase",
+  textDecoration: "none",
+  color: "black"
+};
 
-  return (
-    <StyledDiv style={{ height: "5vh" }}>
+class AppBar extends Component {
+  render() {
+    return (
       <Grid container direction="row" justify="center" alignItems="center">
         <Link style={AppBarStyle} to="/about">
           <StyledParagraph>About</StyledParagraph>
@@ -34,8 +34,8 @@ function AppBar() {
           <StyledParagraph>Contact</StyledParagraph>
         </Link>
       </Grid>
-    </StyledDiv>
-  );
+    );
+  }
 }
 
 export default AppBar;

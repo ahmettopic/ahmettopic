@@ -2,16 +2,16 @@ import React, { Component } from "react";
 // Material Grid
 import Grid from "@material-ui/core/Grid";
 // Styled Components
-import StyledDiv from "../../styles/StyledDiv";
 import StyledParagraph from "../../styles/StyledParagraph";
 
 class SnackBar extends Component {
   render() {
     return (
-      <StyledDiv
+      <div
         style={{
           backgroundColor: "#dd4444",
           height: "7vh",
+          display: "flex",
           alignItems: "center",
           textAlign: "center"
         }}
@@ -19,11 +19,24 @@ class SnackBar extends Component {
         <Grid container direction="row">
           <Grid item xs={12}>
             <StyledParagraph>
-              New <u>release</u> is finally deployed!
+              New
+              <a
+                style={{
+                  textDecoration: "underline",
+                  color: "black",
+                  margin: "4px"
+                }}
+                target="_blank"
+                href="https://www.npmjs.com/package/react-sticky"
+                rel="noreferrer noopener"
+              >
+                release
+              </a>
+              is finally deployed!
             </StyledParagraph>
           </Grid>
         </Grid>
-      </StyledDiv>
+      </div>
     );
   }
 }

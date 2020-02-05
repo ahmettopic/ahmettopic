@@ -2,14 +2,18 @@ import React from "react";
 // Material Grid
 import Grid from "@material-ui/core/Grid";
 // Styled Components
-import StyledDiv from "../../styles/StyledDiv";
 import StyledParagraph from "../../styles/StyledParagraph";
 import StyledHeading from "../../styles/StyledHeading";
 
 const welcome = props => {
   return (
-    <StyledDiv
-      style={{ height: "25vh", alignItems: "center", textAlign: "center" }}
+    <div
+      style={{
+        height: "25vh",
+        display: "flex",
+        alignItems: "center",
+        textAlign: "center"
+      }}
     >
       <Grid container direction="row">
         <Grid item xs>
@@ -19,7 +23,7 @@ const welcome = props => {
           </StyledParagraph>
         </Grid>
       </Grid>
-    </StyledDiv>
+    </div>
   );
 };
 

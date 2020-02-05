@@ -4,28 +4,29 @@ import Grid from "@material-ui/core/Grid";
 // JSON Data
 import about from "./about.json";
 // Styled Components
-import StyledDiv from "../../styles/StyledDiv";
 import StyledParagraph from "../../styles/StyledParagraph";
 
 class About extends Component {
   render() {
     return (
-      <StyledDiv>
+      <div style={{ padding: "1em" }}>
         <Grid container direction="row">
           <Grid item xs={12} sm={6}>
             {about.map((about, id) => {
               return (
-                <StyledParagraph key={id} style={{ textAlign: "flex-start" }}>
+                <StyledParagraph key={id} style={{ textAlign: "center" }}>
                   {about.lead_1}
                 </StyledParagraph>
               );
             })}
           </Grid>
           <Grid item xs={12} sm={6}>
-            <StyledParagraph style={{ textAlign: "center" }}></StyledParagraph>
+            <StyledParagraph style={{ textAlign: "center" }}>
+              BILD
+            </StyledParagraph>
           </Grid>
         </Grid>
-      </StyledDiv>
+      </div>
     );
   }
 }

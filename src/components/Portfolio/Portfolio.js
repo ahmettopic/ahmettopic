@@ -2,17 +2,37 @@ import React from "react";
 // Material Grid
 import Grid from "@material-ui/core/Grid";
 // Styled Components
-import StyledDiv from "../../styles/StyledDiv";
 import StyledParagraph from "../../styles/StyledParagraph";
 
 const portfolio = props => (
-  <StyledDiv>
+  <div
+    style={{
+      padding: "1em"
+    }}
+  >
     <Grid container direction="row">
-      <Grid item>
-        <StyledParagraph>Portfolio</StyledParagraph>
+      <Grid item xs>
+        <StyledParagraph style={{ textAlign: "center" }}>
+          Some content on this page is still being developed. Meanwhile visit my
+          GitHub page
+        </StyledParagraph>
+        <StyledParagraph style={{ margin: "20px", textAlign: "center" }}>
+          <a
+            style={{
+              textTransform: "uppercase",
+              textDecoration: "none",
+              color: "black"
+            }}
+            target="_blank"
+            href="https://www.npmjs.com/package/react-sticky"
+            rel="noreferrer noopener"
+          >
+            here
+          </a>
+        </StyledParagraph>
       </Grid>
     </Grid>
-  </StyledDiv>
+  </div>
 );
 
 export default portfolio;
