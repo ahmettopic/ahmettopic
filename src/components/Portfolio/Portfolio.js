@@ -17,7 +17,8 @@ const portfolio = props => (
     <Grid container justify="center">
       <Grid item xs={12}>
         <StyledParagraph style={{ textAlign: "center" }}>
-          Some content on this page is still being developed. Meanwhile visit my
+          <b>Some content on this page is still being developed</b>. Meanwhile
+          visit
           <a
             style={{
               margin: "4px",
@@ -30,7 +31,6 @@ const portfolio = props => (
           >
             GitHub
           </a>
-          page
         </StyledParagraph>
       </Grid>
     </Grid>

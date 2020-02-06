@@ -17,8 +17,8 @@ const contact = props => (
     <Grid container justify="center">
       <Grid item xs={12}>
         <StyledParagraph style={{ textAlign: "center" }}>
-          Some content on this page is still being developed. Meanwhile contact
-          me at
+          <b>Some content on this page is still being developed</b>. Meanwhile
+          visit
           <a
             style={{
               margin: "4px",
@@ -33,7 +33,7 @@ const contact = props => (
           </a>
         </StyledParagraph>
         <StyledParagraph style={{ textAlign: "center", marginTop: "1em" }}>
-          or ahmettopic@hotmail.com
+          ahmettopic@hotmail.com
         </StyledParagraph>
       </Grid>
     </Grid>
