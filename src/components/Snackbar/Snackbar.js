@@ -10,7 +10,7 @@ class SnackBar extends Component {
       <div
         style={{
           backgroundColor: "#dd4444",
-          height: "7vh",
+          height: "5vh",
           display: "flex",
           alignItems: "center",
           textAlign: "center"

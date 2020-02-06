@@ -9,9 +9,16 @@ import StyledParagraph from "../../styles/StyledParagraph";
 class About extends Component {
   render() {
     return (
-      <div style={{ padding: "1em" }}>
+      <div
+        style={{
+          padding: "1em",
+          display: "flex",
+          alignItems: "center",
+          textAlign: "center"
+        }}
+      >
         <Grid container direction="row">
-          <Grid item xs={12} sm={6}>
+          <Grid item xs>
             {about.map((about, id) => {
               return (
                 <StyledParagraph key={id} style={{ textAlign: "center" }}>
@@ -19,11 +26,6 @@ class About extends Component {
                 </StyledParagraph>
               );
             })}
-          </Grid>
-          <Grid item xs={12} sm={6}>
-            <StyledParagraph style={{ textAlign: "center" }}>
-              BILD
-            </StyledParagraph>
           </Grid>
         </Grid>
       </div>

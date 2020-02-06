@@ -24,7 +24,7 @@ const portfolio = props => (
               color: "black"
             }}
             target="_blank"
-            href="https://www.npmjs.com/package/react-sticky"
+            href="https://github.com/ahmettopic"
             rel="noreferrer noopener"
           >
             here

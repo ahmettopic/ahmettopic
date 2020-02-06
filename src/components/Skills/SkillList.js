@@ -57,7 +57,13 @@ class SkillsList extends Component {
 
   render() {
     return (
-      <Grid container direction="row" justify="center" alignItems="center">
+      <Grid
+        container
+        direction="row"
+        justify="center"
+        alignItems="center"
+        alignContent="center"
+      >
         {this.state.skills.map((skill, id) => {
           return <Skill key={id} icon={skill.icon} name={skill.name}></Skill>;
         })}

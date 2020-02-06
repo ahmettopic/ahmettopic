@@ -8,7 +8,6 @@ import StyledParagraph from "../../styles/StyledParagraph";
 
 const AppBarStyle = {
   margin: "5px",
-  height: "15vh",
   textTransform: "uppercase",
   textDecoration: "none",
   color: "black"
@@ -17,23 +16,32 @@ const AppBarStyle = {
 class AppBar extends Component {
   render() {
     return (
-      <Grid container direction="row" justify="center" alignItems="center">
-        <Link style={AppBarStyle} to="/about">
-          <StyledParagraph>About</StyledParagraph>
-        </Link>
+      <div
+        style={{
+          height: "10vh",
+          display: "flex",
+          alignItems: "center",
+          textAlign: "center"
+        }}
+      >
+        <Grid container direction="row" justify="center" alignItems="center">
+          <Link style={AppBarStyle} to="/about">
+            <StyledParagraph>About</StyledParagraph>
+          </Link>
 
-        <Link style={AppBarStyle} to="/skills">
-          <StyledParagraph>Skills</StyledParagraph>
-        </Link>
+          <Link style={AppBarStyle} to="/skills">
+            <StyledParagraph>Skills</StyledParagraph>
+          </Link>
 
-        <Link style={AppBarStyle} to="/portfolio">
-          <StyledParagraph>Portfolio</StyledParagraph>
-        </Link>
+          <Link style={AppBarStyle} to="/portfolio">
+            <StyledParagraph>Portfolio</StyledParagraph>
+          </Link>
 
-        <Link style={AppBarStyle} to="/contact">
-          <StyledParagraph>Contact</StyledParagraph>
-        </Link>
-      </Grid>
+          <Link style={AppBarStyle} to="/contact">
+            <StyledParagraph>Contact</StyledParagraph>
+          </Link>
+        </Grid>
+      </div>
     );
   }
 }

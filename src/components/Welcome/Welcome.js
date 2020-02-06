@@ -9,14 +9,14 @@ const welcome = props => {
   return (
     <div
       style={{
-        height: "25vh",
+        height: "30vh",
         display: "flex",
         alignItems: "center",
         textAlign: "center"
       }}
     >
       <Grid container direction="row">
-        <Grid item xs>
+        <Grid item xs={12}>
           <StyledHeading>Portfolio</StyledHeading>
           <StyledParagraph>
             Ahmet Topic / Full Stack Web Developer
