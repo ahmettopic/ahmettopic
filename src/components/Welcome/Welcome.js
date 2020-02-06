@@ -9,7 +9,7 @@ const welcome = props => {
   return (
     <div
       style={{
-        height: "30vh",
+        height: "20vh",
         display: "flex",
         alignItems: "center",
         textAlign: "center"

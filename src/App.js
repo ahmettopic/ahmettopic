@@ -13,6 +13,8 @@ import SnackBar from "./components/SnackBar/Snackbar";
 import AppBar from "./components/AppBar/AppBar";
 // Styled Components
 import GlobalStyle from "./styles/GlobalStyle";
+// Media
+import profilepicture from "./assets/profilepicture.png";
 // Loader
 import Spinner from "./components/Spinner/Spinner";
 // LazyLoad
@@ -48,11 +50,14 @@ class App extends Component {
                 alignItems: "center",
                 textAlign: "center",
                 justifyContent: "center",
-                height: "75vh",
-                backgroundColor: "#f7f7f7"
+                height: "85vh"
               }}
             >
-              hej
+              <img
+                style={{ width: "50vh" }}
+                src={profilepicture}
+                alt="PictureOfMe"
+              />
             </div>
           </Grid>
         </Grid>

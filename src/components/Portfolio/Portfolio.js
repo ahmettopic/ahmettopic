@@ -7,28 +7,30 @@ import StyledParagraph from "../../styles/StyledParagraph";
 const portfolio = props => (
   <div
     style={{
-      padding: "1em"
+      padding: "1em",
+      display: "flex",
+      alignItems: "center",
+      textAlign: "center",
+      justifyContent: "center"
     }}
   >
-    <Grid container direction="row">
-      <Grid item xs>
+    <Grid container justify="center">
+      <Grid item xs={12}>
         <StyledParagraph style={{ textAlign: "center" }}>
           Some content on this page is still being developed. Meanwhile visit my
-          GitHub page
-        </StyledParagraph>
-        <StyledParagraph style={{ margin: "20px", textAlign: "center" }}>
           <a
             style={{
-              textTransform: "uppercase",
-              textDecoration: "none",
+              margin: "4px",
+              textDecoration: "underline",
               color: "black"
             }}
             target="_blank"
             href="https://github.com/ahmettopic"
             rel="noreferrer noopener"
           >
-            here
+            GitHub
           </a>
+          page
         </StyledParagraph>
       </Grid>
     </Grid>
