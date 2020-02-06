@@ -3,8 +3,6 @@ import React from "react";
 import Grid from "@material-ui/core/Grid";
 // Styled Components
 import StyledParagraph from "../../styles/StyledParagraph";
-// Media
-import card from "../../assets/card.png";
 
 const contact = props => (
   <div
@@ -19,16 +17,24 @@ const contact = props => (
     <Grid container justify="center">
       <Grid item xs={12}>
         <StyledParagraph style={{ textAlign: "center" }}>
-          Some content on this page is still being developed. Meanwhile, take my
-          business card!
+          Some content on this page is still being developed. Meanwhile contact
+          me at
+          <a
+            style={{
+              margin: "4px",
+              textDecoration: "underline",
+              color: "black"
+            }}
+            target="_blank"
+            href="https://se.linkedin.com/in/ahmettopic?trk=profile-badge"
+            rel="noreferrer noopener"
+          >
+            LinkedIn
+          </a>
         </StyledParagraph>
-      </Grid>
-      <Grid item xs={12}>
-        <img
-          style={{ width: "40vh", paddingTop: "2em" }}
-          src={card}
-          alt="LuckyCard"
-        />
+        <StyledParagraph style={{ textAlign: "center", marginTop: "1em" }}>
+          or ahmettopic@hotmail.com
+        </StyledParagraph>
       </Grid>
     </Grid>
   </div>
