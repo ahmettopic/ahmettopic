@@ -23,6 +23,7 @@ class AppBar extends Component {
       <div
         style={{
           height: "6vh",
+          marginBottom: "1em",
           display: "flex",
           alignItems: "center",
           textAlign: "center",
