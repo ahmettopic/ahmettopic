@@ -12,12 +12,12 @@ const SkillItem = {
   alignItems: "center"
 };
 
-const skill = props => {
+const skill = ({ icon, name }) => {
   return (
     <Grid item xs={4} sm={2}>
-      <div style={SkillItem}>{props.icon}</div>
+      <div style={SkillItem}>{icon}</div>
       <div style={SkillItem}>
-        <StyledParagraph>{props.name}</StyledParagraph>
+        <StyledParagraph>{name}</StyledParagraph>
       </div>
     </Grid>
   );
