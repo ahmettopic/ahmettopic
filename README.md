@@ -4,12 +4,12 @@
 Thanks for visiting my Portfolio and I hope you enjoyed it. As you've noticed there is much work left to do and I'm sorry if it spoiled your experience!
 
 #### Goals and Background
-The **goal** with this kind of project is to evolve myself to become a better webdeveloper, webdesigner and to tie my skills together. The idea behind this whole project was to create a resume/portfolio ultimately, I am a webdeveloper so it's the right way.
+The goal with this kind of project is to evolve myself to become a better webdeveloper, webdesigner and to tie my skills together. The idea behind this whole project was to create a resume/portfolio ultimately, I am a webdeveloper so it's the right way.
 
 #### Upcoming plans
 
 ##### SnackBar
-The SnackBar should be able to be toggled.
+The **SnackBar** should be able to be toggled.
 
 ##### AppBar
 The **AppBar** needs some UI changes, both *desktop* and *mobile* view. The plan is to create a more "friendly" experience. When in *mobile* view the **AppBar** should be placed at bottom of screen so that it's always reachable.
