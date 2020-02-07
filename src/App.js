@@ -56,7 +56,7 @@ class App extends Component {
               }}
             >
               <img
-                style={{ width: "45vh" }}
+                style={{ width: "43vh" }}
                 src={profilepicture}
                 alt="PictureOfMe"
               />

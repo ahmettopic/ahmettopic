@@ -26,7 +26,8 @@ class AppBar extends Component {
           display: "flex",
           alignItems: "center",
           textAlign: "center",
-          backgroundColor: "#e5e5e5"
+          backgroundColor: "#e0e0e0",
+          boxShadow: "0 2px 4px rgba(0,0,0,.25)"
         }}
       >
         <Grid container direction="row" justify="center" alignItems="center">
