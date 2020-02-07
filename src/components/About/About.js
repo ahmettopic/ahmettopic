@@ -21,9 +21,21 @@ class About extends Component {
           <Grid item xs>
             {about.map((about, id) => {
               return (
-                <StyledParagraph key={id} style={{ textAlign: "center" }}>
-                  {about.lead_1}
-                </StyledParagraph>
+                <React.Fragment key={id}>
+                  <StyledParagraph style={{ textAlign: "center" }}>
+                    {about.lead_1}
+                  </StyledParagraph>
+
+                  <StyledParagraph
+                    style={{
+                      textAlign: "center",
+                      fontSize: "26px",
+                      marginTop: "1em"
+                    }}
+                  >
+                    {about.lead_2}
+                  </StyledParagraph>
+                </React.Fragment>
               );
             })}
           </Grid>

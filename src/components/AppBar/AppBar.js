@@ -18,10 +18,11 @@ class AppBar extends Component {
     return (
       <div
         style={{
-          height: "10vh",
+          height: "6vh",
           display: "flex",
           alignItems: "center",
-          textAlign: "center"
+          textAlign: "center",
+          backgroundColor: "#e5e5e5"
         }}
       >
         <Grid container direction="row" justify="center" alignItems="center">

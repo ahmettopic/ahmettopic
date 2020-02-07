@@ -6,6 +6,16 @@ import StyledParagraph from "../../styles/StyledParagraph";
 
 class SnackBar extends Component {
   render() {
+    const Emoji = props => (
+      <span
+        className="emoji"
+        role="img"
+        aria-label={props.label ? props.label : ""}
+        aria-hidden={props.label ? "false" : "true"}
+      >
+        {props.symbol}
+      </span>
+    );
     return (
       <div
         style={{
@@ -19,7 +29,7 @@ class SnackBar extends Component {
         <Grid container direction="row">
           <Grid item xs={12}>
             <StyledParagraph>
-              New
+              GitHub
               <a
                 style={{
                   textDecoration: "underline",
@@ -30,9 +40,9 @@ class SnackBar extends Component {
                 href="https://www.npmjs.com/package/react-sticky"
                 rel="noreferrer noopener"
               >
-                release
+                README
               </a>
-              is finally deployed!
+              <Emoji symbol="👈" />
             </StyledParagraph>
           </Grid>
         </Grid>

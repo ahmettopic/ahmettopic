@@ -19,7 +19,7 @@ const welcome = props => {
         <Grid item xs={12}>
           <StyledHeading>Portfolio</StyledHeading>
           <StyledParagraph>
-            Ahmet Topic / Full Stack Web Developer / Web Designer
+            Ahmet Topic / Junior Fullstack Web Developer
           </StyledParagraph>
         </Grid>
       </Grid>
