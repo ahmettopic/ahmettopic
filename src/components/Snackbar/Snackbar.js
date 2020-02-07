@@ -37,7 +37,7 @@ class SnackBar extends Component {
                   margin: "4px"
                 }}
                 target="_blank"
-                href="https://www.npmjs.com/package/react-sticky"
+                href="https://github.com/ahmettopic/ahmettopic"
                 rel="noreferrer noopener"
               >
                 README
