@@ -14,6 +14,10 @@ const AppBarStyle = {
 };
 
 class AppBar extends Component {
+  state = {
+    visible: false
+  };
+  s;
   render() {
     return (
       <div
