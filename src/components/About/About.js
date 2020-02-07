@@ -47,13 +47,13 @@ class About extends Component {
                         backgroundColor: "#e0e0e0"
                       }}
                     >
-                      I'am the strongest man around!
+                      I am the strongest man around!
                     </StyledParagraph>
                   </div>
                   <StyledParagraph
                     style={{
                       textAlign: "center",
-                      fontSize: "14px"
+                      fontSize: "12px"
                     }}
                   >
                     Well, according to my son.
