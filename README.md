@@ -1,36 +1,46 @@
-## ahmettopic.com
+# ahmettopic.com
 
-#### Before you read!
+## Before you read!
 Thanks for visiting my Portfolio and I hope you enjoyed it. As you've noticed there is much work left to do and I'm sorry if it spoiled your experience!
 
-#### Goals and Background
+## Goals and Background
 The goal with this kind of project is to evolve myself to become a better webdeveloper, webdesigner and to tie my skills together. The idea behind this whole project was to create a resume/portfolio ultimately, I am a webdeveloper so it's the right way.
 
-#### Upcoming plans
+# Upcoming plans
 
-##### SnackBar
+### SnackBar
 The **SnackBar** should be able to be toggled.
 
-##### AppBar
+### AppBar
 The **AppBar** needs some UI changes, both *desktop* and *mobile* view. The plan is to create a more "friendly" experience. When in *mobile* view the **AppBar** should be placed at bottom of screen so that it's always reachable.
 
-##### Skills
+### Skills
 The **Skills** needs some position fixes.
 
-##### Portfolio
+### Portfolio
 **Portfolio** will show projects and links to repos.
 
-##### Contact
+### Contact
 When in **Contact** the user will be able to send me a message/email. Create some kind of Login/Auth before sending message/email.
 
-##### Image
+### Image
 The profile picture needs to be converted to SVG
 
-##### Layout
+### Layout
 Overall changes in UI/UX
 
-## Thanks
-ahmettopic@hotmail.com
+# Thanks
+Thank you for viewing my project! The most **important** key for reaching the top of the line is the **feedback**, so please take your time and send me a message:
+
+..* What did you like?
+..* What was less good?
+..* Is there any tips and tricks you want to share?
+
+if you determine, you can find me on *LinkedIn* or email me @ *ahmettopic@hotmail.com* 
+
+Thanks again and have a wonderful day! 
+
+[I'm an inline-style link with title](https://ahmettopic.com "MY PORTFOLIO")
 
 
 
