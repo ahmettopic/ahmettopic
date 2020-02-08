@@ -1,12 +1,12 @@
 # ahmettopic.com
 
-## Before you read!
+### Before you read!
 Thanks for visiting my Portfolio and I hope you enjoyed it. As you've noticed there is much work left to do and I'm sorry if it spoiled your experience!
 
-## Goals and Background
+### Goals and Background
 The goal with this kind of project is to evolve myself to become a better webdeveloper, webdesigner and to tie my skills together. The idea behind this whole project was to create a resume/portfolio ultimately, I am a webdeveloper so it's the right way.
 
-# Upcoming plans
+## Upcoming plans
 
 ### SnackBar
 The **SnackBar** should be able to be toggled.
@@ -29,18 +29,18 @@ The profile picture needs to be converted to SVG
 ### Layout
 Overall changes in UI/UX
 
-# Thanks
+## Thanks
 Thank you for viewing my project! The most **important** key for reaching the top of the line is the **feedback**, so please take your time and send me a message:
 
-..* What did you like?
-..* What was less good?
-..* Is there any tips and tricks you want to share?
+1. What did you like?
+2. What was less good?
+3. Is there any tips and tricks you want to share?
 
-if you determine, you can find me on *LinkedIn* or email me @ *ahmettopic@hotmail.com* 
+if you determine, you can find me on **LinkedIn** or email me @ **ahmettopic@hotmail.com**
 
-Thanks again and have a wonderful day! 
+*Thanks again and have a wonderful day!*
 
-[I'm an inline-style link with title](https://ahmettopic.com "MY PORTFOLIO")
+[ahmettopic.com](https://ahmettopic.com "MY PORTFOLIO")
 
 
 
