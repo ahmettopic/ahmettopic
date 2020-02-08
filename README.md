@@ -36,11 +36,11 @@ Thank you for viewing my project! The most **important** key for reaching the to
 2. What was less good?
 3. Is there any tips and tricks you want to share?
 
-if you determine, you can find me on **LinkedIn** or email me @ **ahmettopic@hotmail.com**
+if you determine, you can find me on **LinkedIn** or email me => ahmettopic@hotmail.com
 
 *Thanks again and have a wonderful day!*
 
-[ahmettopic.com](https://ahmettopic.com "MY PORTFOLIO")
+[ahmettopic.com](https://www.ahmettopic.com "MY PORTFOLIO")
 
 
 
