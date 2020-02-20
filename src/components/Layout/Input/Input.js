@@ -3,6 +3,14 @@ import React from 'react';
 const input = props => {
   let inputElement = null;
 
+  const inputStyles = {
+    backgroundColor: 'red'
+  };
+
+  if (props.invalid && props.shouldValidate && props.touched) {
+    inputStyles.push(inputStyles);
+  }
+
   switch (props.elementType) {
     case 'input':
       inputElement = (
@@ -44,7 +52,7 @@ const input = props => {
   }
 
   return (
-    <div>
+    <div style={inputStyles}>
       <label>{props.label}</label>
       {inputElement}
     </div>
