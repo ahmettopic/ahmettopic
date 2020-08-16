@@ -1,7 +1,9 @@
-import firebase from 'firebase';
+// Firebase CORE
+import * as firebase from 'firebase/app';
+// Firebase Addons
+import 'firebase/auth';
 
-// Firebase configuration
-var firebaseConfig = {
+const config = {
   apiKey: 'AIzaSyCKIj9_8H42PBDNN6X5FkbFfIJmZtkoJ2M',
   authDomain: 'ahmettopic-4ff91.firebaseapp.com',
   databaseURL: 'https://ahmettopic-4ff91.firebaseio.com',
@@ -12,6 +14,6 @@ var firebaseConfig = {
 };
 
 // Initialize Firebase
-const fire = firebase.initializeApp(firebaseConfig);
+const firebaseConfig = firebase.initializeApp(config);
 // EXPORT
-export default fire;
+export default firebaseConfig;

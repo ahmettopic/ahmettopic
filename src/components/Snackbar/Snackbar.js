@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 // Material Grid
 import Grid from '@material-ui/core/Grid';
 // Styled Components
@@ -22,12 +23,14 @@ class SnackBar extends Component {
       >
         <Grid container direction="row">
           <Grid item xs={12}>
-            <StyledParagraph
-              style={{ margin: '10px' }}
-              onClick={this.loginClick}
-            >
-              DASHBOARD
-            </StyledParagraph>
+            <Link to="/dashboard">
+              <StyledParagraph
+                style={{ margin: '10px' }}
+                onClick={this.loginClick}
+              >
+                DASHBOARD
+              </StyledParagraph>
+            </Link>
           </Grid>
         </Grid>
       </div>
