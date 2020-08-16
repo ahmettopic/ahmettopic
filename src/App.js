@@ -14,7 +14,7 @@ import AppBar from './components/AppBar/AppBar';
 // Styled Components
 import GlobalStyle from './styles/GlobalStyle';
 // Media
-import profilepicture from './assets/profilepicture.png';
+// import profilepicture from './assets/profilepicture.png';
 // Loader
 import Spinner from './components/Spinner/Spinner';
 // LazyLoad

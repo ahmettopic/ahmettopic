@@ -1,48 +1,32 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 // Material Grid
-import Grid from "@material-ui/core/Grid";
+import Grid from '@material-ui/core/Grid';
 // Styled Components
-import StyledParagraph from "../../styles/StyledParagraph";
+import StyledParagraph from '../../styles/StyledParagraph';
 
 class SnackBar extends Component {
+  dashBoard = () => {
+    console.log('DASHBOARD');
+  };
+
   render() {
-    const Emoji = props => (
-      <span
-        className="emoji"
-        role="img"
-        aria-label={props.label ? props.label : ""}
-        aria-hidden={props.label ? "false" : "true"}
-      >
-        {props.symbol}
-      </span>
-    );
     return (
       <div
         style={{
-          backgroundColor: "#dd4444",
-          height: "5vh",
-          display: "flex",
-          alignItems: "center",
-          textAlign: "center"
+          backgroundColor: '#dd4444',
+          height: '5vh',
+          display: 'flex',
+          alignItems: 'center',
+          textAlign: 'right',
         }}
       >
         <Grid container direction="row">
           <Grid item xs={12}>
-            <StyledParagraph>
-              GitHub
-              <a
-                style={{
-                  textDecoration: "underline",
-                  color: "black",
-                  margin: "4px"
-                }}
-                target="_blank"
-                href="https://github.com/ahmettopic/ahmettopic"
-                rel="noreferrer noopener"
-              >
-                README
-              </a>
-              <Emoji symbol="👈" />
+            <StyledParagraph
+              style={{ margin: '10px' }}
+              onClick={this.loginClick}
+            >
+              DASHBOARD
             </StyledParagraph>
           </Grid>
         </Grid>
