@@ -1,24 +1,24 @@
-import React, { Component, lazy, Suspense } from "react";
+import React, { Component, lazy, Suspense } from 'react';
 // React Router
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 // Route Components
-import About from "./components/About/About";
-import SkillsList from "./components/Skills/SkillList";
-import Portfolio from "./components/Portfolio/Portfolio";
-import Contact from "./components/Contact/Contact";
+import About from './components/About/About';
+import SkillsList from './components/Skills/SkillList';
+import Portfolio from './components/Portfolio/Portfolio';
+import Contact from './components/Contact/Contact';
 // Material Grid
-import Grid from "@material-ui/core/Grid";
+import Grid from '@material-ui/core/Grid';
 // Components
-import SnackBar from "./components/SnackBar/Snackbar";
-import AppBar from "./components/AppBar/AppBar";
+import SnackBar from './components/SnackBar/Snackbar';
+import AppBar from './components/AppBar/AppBar';
 // Styled Components
-import GlobalStyle from "./styles/GlobalStyle";
+import GlobalStyle from './styles/GlobalStyle';
 // Media
-import profilepicture from "./assets/profilepicture.png";
+import profilepicture from './assets/profilepicture.png';
 // Loader
-import Spinner from "./components/Spinner/Spinner";
+import Spinner from './components/Spinner/Spinner';
 // LazyLoad
-const Welcome = lazy(() => import("./components/Welcome/Welcome"));
+const Welcome = lazy(() => import('./components/Welcome/Welcome'));
 
 class App extends Component {
   render() {
@@ -43,24 +43,6 @@ class App extends Component {
                 </Switch>
               </div>
             </Router>
-          </Grid>
-          <Grid item xs={12} md={3}>
-            <div
-              className="animated fadeIn"
-              style={{
-                display: "flex",
-                alignItems: "center",
-                textAlign: "center",
-                justifyContent: "center",
-                height: "85vh"
-              }}
-            >
-              <img
-                style={{ width: "43vh" }}
-                src={profilepicture}
-                alt="PictureOfMe"
-              />
-            </div>
           </Grid>
         </Grid>
       </React.Fragment>
