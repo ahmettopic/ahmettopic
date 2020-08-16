@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom';
 // Material Grid
 import Grid from '@material-ui/core/Grid';
 // Styled Components
-import StyledParagraph from '../../styles/StyledParagraph';
-
+import { FiLogIn } from 'react-icons/fi';
 class SnackBar extends Component {
   dashBoard = () => {
     console.log('DASHBOARD');
@@ -15,7 +14,7 @@ class SnackBar extends Component {
       <div
         style={{
           backgroundColor: '#dd4444',
-          height: '5vh',
+          height: '8vh',
           display: 'flex',
           alignItems: 'center',
           textAlign: 'right',
@@ -24,12 +23,12 @@ class SnackBar extends Component {
         <Grid container direction="row">
           <Grid item xs={12}>
             <Link to="/dashboard">
-              <StyledParagraph
-                style={{ margin: '10px' }}
+              <FiLogIn
+                size={30}
+                color={'white'}
+                style={{ margin: '15px' }}
                 onClick={this.loginClick}
-              >
-                DASHBOARD
-              </StyledParagraph>
+              />
             </Link>
           </Grid>
         </Grid>
