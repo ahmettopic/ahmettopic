@@ -1,0 +1,28 @@
+{
+  "portfolioItems": [
+    {
+      "title": "My website project",
+      "desc": "<p>Created personal website just to learn more about React</p>",
+      "imgURL": "Add img URL here!",
+      "githubLink": "GitHub link here!"
+    },
+    {
+      "title": "ProjectOne - JavaScript ES6 Projects",
+      "desc": "<p>Some info about ProjectOne</p>",
+      "imgURL": "Add img URL here!",
+      "githubLink": "GitHub link here!"
+    },
+    {
+      "title": "ProjectTwo - JavaScript ES6 Projects",
+      "desc": "<p>Some info about ProjectTwo</p>",
+      "imgURL": "Add img URL here!",
+      "githubLink": "GitHub link here!"
+    },
+    {
+      "title": "ProjectThree - JavaScript ES6 Projects",
+      "desc": "<p>Some info about ProjectThree</p>",
+      "imgURL": "Add img URL here!",
+      "githubLink": "GitHub link here!"
+    }
+  ]
+}

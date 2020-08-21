@@ -1,19 +1,19 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 // Material Grid
-import Grid from "@material-ui/core/Grid";
+import Grid from '@material-ui/core/Grid';
 // JSON Data
-import about from "./about.json";
+import about from './about.json';
 // Styled Components
-import StyledParagraph from "../../styles/StyledParagraph";
+import StyledParagraph from '../../styles/StyledParagraph';
 
 class About extends Component {
   render() {
-    const Emoji = props => (
+    const Emoji = (props) => (
       <span
         className="emoji"
         role="img"
-        aria-label={props.label ? props.label : ""}
-        aria-hidden={props.label ? "false" : "true"}
+        aria-label={props.label ? props.label : ''}
+        aria-hidden={props.label ? 'false' : 'true'}
       >
         {props.symbol}
       </span>
@@ -21,11 +21,11 @@ class About extends Component {
     return (
       <div
         style={{
-          padding: "1em",
-          display: "flex",
-          alignItems: "center",
-          textAlign: "flex-start",
-          fontSize: "18px"
+          padding: '1em',
+          display: 'flex',
+          alignItems: 'center',
+          textAlign: 'flex-start',
+          fontSize: '18px',
         }}
       >
         <Grid container direction="row">
@@ -40,11 +40,11 @@ class About extends Component {
                     {about.lead_3}
                     <Emoji symbol="💅" />
                   </StyledParagraph>
-                  <div style={{ marginTop: "1em", marginBottom: "3em" }}>
+                  <div style={{ marginTop: '1em', marginBottom: '3em' }}>
                     <StyledParagraph
                       style={{
-                        textAlign: "center",
-                        backgroundColor: "#e0e0e0"
+                        textAlign: 'center',
+                        backgroundColor: '#e0e0e0',
                       }}
                     >
                       I am the strongest man around!
@@ -52,14 +52,14 @@ class About extends Component {
                   </div>
                   <StyledParagraph
                     style={{
-                      textAlign: "center",
-                      fontSize: "12px"
+                      textAlign: 'center',
+                      fontSize: '12px',
                     }}
                   >
                     Well, according to my son.
                   </StyledParagraph>
                   <StyledParagraph
-                    style={{ fontSize: "28px", textAlign: "center" }}
+                    style={{ fontSize: '28px', textAlign: 'center' }}
                   >
                     What's your superpower?
                   </StyledParagraph>
