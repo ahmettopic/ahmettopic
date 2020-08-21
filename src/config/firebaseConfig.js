@@ -2,6 +2,7 @@
 import * as firebase from 'firebase/app';
 // Firebase Addons
 import 'firebase/auth';
+import 'firebase/firestore';
 
 const config = {
   apiKey: 'AIzaSyCKIj9_8H42PBDNN6X5FkbFfIJmZtkoJ2M',
