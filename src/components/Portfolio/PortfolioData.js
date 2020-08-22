@@ -5,6 +5,7 @@ import { PortfolioInput } from './PortfolioInput';
 
 function PortfolioData() {
   const [portfolioItems, setPortfolioItems] = React.useState([]);
+  const [newPortfolioItem, setNewPortfolioItem] = React.useState();
 
   React.useEffect(() => {
     const fetchdata = async () => {
@@ -17,15 +18,25 @@ function PortfolioData() {
     fetchdata();
   }, []);
 
+  const onCreate = () => {
+    const db = firebaseConfig.firestore();
+    db.collection('portfolioItems').add({ title: newPortfolioItem });
+  };
+
   return (
     <React.Fragment>
-      {portfolioItems.map((portfolioItems) => (
-        <ul style={{ listStyleType: 'none' }}>
-          <li>
+      <input
+        value={newPortfolioItem}
+        onChange={(e) => setNewPortfolioItem(e.target.value)}
+      />
+      <button onClick={onCreate}>Create</button>
+      <ul style={{ listStyleType: 'none' }}>
+        {portfolioItems.map((portfolioItems) => (
+          <li key={portfolioItems.title}>
             <PortfolioInput portfolioItems={portfolioItems} />
           </li>
-        </ul>
-      ))}
+        ))}
+      </ul>
     </React.Fragment>
   );
 }

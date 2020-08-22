@@ -9,6 +9,11 @@ export const PortfolioInput = ({ portfolioItems }) => {
       .doc(portfolioItems.id)
       .set({ ...portfolioItems, title });
   };
+
+  const onDelete = () => {
+    const db = firebaseConfig.firestore();
+    db.collection('portfolioItems').doc(portfolioItems.id).delete();
+  };
   return (
     <React.Fragment>
       <input
@@ -18,6 +23,7 @@ export const PortfolioInput = ({ portfolioItems }) => {
         }}
       />
       <button onClick={onUpdate}>Update</button>
+      <button onClick={onDelete}>Delete</button>
     </React.Fragment>
   );
 };
