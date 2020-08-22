@@ -30,7 +30,7 @@ class App extends Component {
       <React.Fragment>
         <GlobalStyle />
         <Grid container spacing={0} justify="center">
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12}>
             <Router>
               <SnackBar />
               <Suspense fallback={<Spinner />}>
@@ -38,7 +38,7 @@ class App extends Component {
                 <AppBar />
               </Suspense>
 
-              <div style={{}}>
+              <div>
                 <Switch>
                   <Route path="/about" component={About} />
                   <Route path="/skills" component={SkillsList} />

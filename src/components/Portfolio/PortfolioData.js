@@ -2,6 +2,8 @@ import React from 'react';
 import firebaseConfig from '../../config/firebaseConfig';
 // Components
 import { PortfolioInput } from './PortfolioInput';
+// Styled Components
+import StyledHeading from '../../styles/StyledHeading';
 
 function PortfolioData() {
   const [portfolioItems, setPortfolioItems] = React.useState([]);
@@ -23,20 +25,57 @@ function PortfolioData() {
     db.collection('portfolioItems').add({ title: newPortfolioItem });
   };
 
+  const styles = {
+    fontSize: '18px',
+  };
+  const inputStyle = {
+    width: '100',
+    margin: '10px',
+  };
+
   return (
     <React.Fragment>
-      <input
-        value={newPortfolioItem}
-        onChange={(e) => setNewPortfolioItem(e.target.value)}
-      />
-      <button onClick={onCreate}>Create</button>
-      <ul style={{ listStyleType: 'none' }}>
-        {portfolioItems.map((portfolioItems) => (
-          <li key={portfolioItems.title}>
-            <PortfolioInput portfolioItems={portfolioItems} />
-          </li>
-        ))}
-      </ul>
+      <div style={inputStyle}>
+        <StyledHeading style={styles}>New portfolio item</StyledHeading>
+        <input
+          style={{
+            width: '60%',
+            fontFamily: 'inherit',
+            fontSize: 'inherit',
+          }}
+          value={newPortfolioItem}
+          onChange={(e) => setNewPortfolioItem(e.target.value)}
+        />
+      </div>
+
+      <div style={inputStyle}>
+        <textarea
+          style={{
+            width: '60%',
+            height: '10vh',
+            fontFamily: 'inherit',
+            fontSize: 'inherit',
+          }}
+        />
+      </div>
+      <div style={inputStyle}>
+        <input
+          style={{
+            width: '60%',
+            fontFamily: 'inherit',
+            fontSize: 'inherit',
+          }}
+        />
+      </div>
+      <div style={{ margin: 10 }}>
+        <button onClick={onCreate}>Add</button>
+      </div>
+      <StyledHeading style={styles}>Edit Portfolio Items</StyledHeading>
+      {portfolioItems.map((portfolioItems) => (
+        <div key={portfolioItems.title} style={{ marginTop: 50 }}>
+          <PortfolioInput portfolioItems={portfolioItems} />
+        </div>
+      ))}
     </React.Fragment>
   );
 }

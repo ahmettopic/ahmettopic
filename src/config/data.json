@@ -2,25 +2,25 @@
   "portfolioItems": [
     {
       "title": "My website project",
-      "desc": "<p>Created personal website just to learn more about React</p>",
+      "desc": "Created personal website just to learn more about React",
       "imgURL": "Add img URL here!",
       "githubLink": "GitHub link here!"
     },
     {
       "title": "ProjectOne - JavaScript ES6 Projects",
-      "desc": "<p>Some info about ProjectOne</p>",
+      "desc": "Some info about ProjectOne",
       "imgURL": "Add img URL here!",
       "githubLink": "GitHub link here!"
     },
     {
       "title": "ProjectTwo - JavaScript ES6 Projects",
-      "desc": "<p>Some info about ProjectTwo</p>",
+      "desc": "Some info about ProjectTwo",
       "imgURL": "Add img URL here!",
       "githubLink": "GitHub link here!"
     },
     {
       "title": "ProjectThree - JavaScript ES6 Projects",
-      "desc": "<p>Some info about ProjectThree</p>",
+      "desc": "Some info about ProjectThree",
       "imgURL": "Add img URL here!",
       "githubLink": "GitHub link here!"
     }
