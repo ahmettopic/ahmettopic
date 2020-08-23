@@ -68,6 +68,15 @@ function PortfolioData() {
             }}
           />
         </div>
+        <div style={inputStyle}>
+          <input
+            style={{
+              width: '60%',
+              fontFamily: 'inherit',
+              fontSize: 'inherit',
+            }}
+          />
+        </div>
         <div style={{ margin: 10 }}>
           <button onClick={onCreate}>Add</button>
         </div>
