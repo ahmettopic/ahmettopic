@@ -35,47 +35,51 @@ function PortfolioData() {
 
   return (
     <React.Fragment>
-      <div style={inputStyle}>
+      <div style={{ marginTop: '10px' }}>
         <StyledHeading style={styles}>New portfolio item</StyledHeading>
-        <input
-          style={{
-            width: '60%',
-            fontFamily: 'inherit',
-            fontSize: 'inherit',
-          }}
-          value={newPortfolioItem}
-          onChange={(e) => setNewPortfolioItem(e.target.value)}
-        />
-      </div>
-
-      <div style={inputStyle}>
-        <textarea
-          style={{
-            width: '60%',
-            height: '10vh',
-            fontFamily: 'inherit',
-            fontSize: 'inherit',
-          }}
-        />
-      </div>
-      <div style={inputStyle}>
-        <input
-          style={{
-            width: '60%',
-            fontFamily: 'inherit',
-            fontSize: 'inherit',
-          }}
-        />
-      </div>
-      <div style={{ margin: 10 }}>
-        <button onClick={onCreate}>Add</button>
-      </div>
-      <StyledHeading style={styles}>Edit Portfolio Items</StyledHeading>
-      {portfolioItems.map((portfolioItems) => (
-        <div key={portfolioItems.title} style={{ marginTop: 50 }}>
-          <PortfolioInput portfolioItems={portfolioItems} />
+        <div style={inputStyle}>
+          <input
+            style={{
+              width: '60%',
+              fontFamily: 'inherit',
+              fontSize: 'inherit',
+            }}
+            value={newPortfolioItem}
+            onChange={(e) => setNewPortfolioItem(e.target.value)}
+          />
         </div>
-      ))}
+
+        <div style={inputStyle}>
+          <textarea
+            style={{
+              width: '60%',
+              height: '10vh',
+              fontFamily: 'inherit',
+              fontSize: 'inherit',
+            }}
+          />
+        </div>
+        <div style={inputStyle}>
+          <input
+            style={{
+              width: '60%',
+              fontFamily: 'inherit',
+              fontSize: 'inherit',
+            }}
+          />
+        </div>
+        <div style={{ margin: 10 }}>
+          <button onClick={onCreate}>Add</button>
+        </div>
+      </div>
+      <div style={{ paddingTop: '60px' }}>
+        <StyledHeading style={styles}>Edit Portfolio Items</StyledHeading>
+        {portfolioItems.map((portfolioItems) => (
+          <div key={portfolioItems.title}>
+            <PortfolioInput portfolioItems={portfolioItems} />
+          </div>
+        ))}
+      </div>
     </React.Fragment>
   );
 }

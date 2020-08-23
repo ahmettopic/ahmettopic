@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PortfolioData from './PortfolioData';
 // Material Grid
 import Grid from '@material-ui/core/Grid';
 
@@ -17,7 +16,7 @@ class Portfolio extends Component {
       >
         <Grid container justify="center">
           <Grid item xs={12}>
-            <PortfolioData />
+            <p>PORTFOLIO ITEMS</p>
           </Grid>
         </Grid>
       </div>

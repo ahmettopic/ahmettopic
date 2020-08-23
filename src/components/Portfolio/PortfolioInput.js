@@ -7,6 +7,7 @@ export const PortfolioInput = ({ portfolioItems }) => {
   const [title, setTitle] = React.useState(portfolioItems.title);
   const [desc, setDesc] = React.useState(portfolioItems.desc);
   const [imgURL, setImgURL] = React.useState(portfolioItems.imgURL);
+  const [githubLink, setGithubLink] = React.useState(portfolioItems.githubLink);
   const onUpdate = () => {
     const db = firebaseConfig.firestore();
     db.collection('portfolioItems')
@@ -32,7 +33,13 @@ export const PortfolioInput = ({ portfolioItems }) => {
     >
       <Grid container direction="row" justify="center" alignItems="center">
         <Grid item xs={12}>
-          <div style={{ backgroundColor: '#d9d9d9', padding: '50px' }}>
+          <div
+            style={{
+              backgroundColor: '#d9d9d9',
+              marginTop: '10px',
+              padding: '5px',
+            }}
+          >
             <div style={inputStyle}>
               <input
                 style={{
@@ -74,12 +81,23 @@ export const PortfolioInput = ({ portfolioItems }) => {
                 }}
               />
             </div>
-          </div>
-        </Grid>
-        <Grid item xs={12}>
-          <div style={{ margin: 10 }}>
-            <button onClick={onUpdate}>Update</button>
-            <button onClick={onDelete}>Delete</button>
+            <div style={inputStyle}>
+              <input
+                style={{
+                  width: '60%',
+                  fontFamily: 'inherit',
+                  fontSize: 'inherit',
+                }}
+                value={githubLink}
+                onChange={(e) => {
+                  setGithubLink(e.target.value);
+                }}
+              />
+            </div>
+            <div style={{ padding: 10 }}>
+              <button onClick={onUpdate}>Update</button>
+              <button onClick={onDelete}>Delete</button>
+            </div>
           </div>
         </Grid>
       </Grid>
