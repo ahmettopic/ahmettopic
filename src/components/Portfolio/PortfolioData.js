@@ -49,7 +49,16 @@ function PortfolioData() {
 
   return (
     <React.Fragment>
-      <div style={{ marginTop: '10px' }}>
+      <div
+        style={{
+          backgroundImage: `url(${newPortfolioItem_imgURL})`,
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+          width: '600',
+        }}
+        value={newPortfolioItem_imgURL}
+      >
         <StyledHeading style={styles}>New portfolio item</StyledHeading>
         <div style={inputStyle}>
           <input
@@ -112,5 +121,4 @@ function PortfolioData() {
     </React.Fragment>
   );
 }
-
 export default PortfolioData;
