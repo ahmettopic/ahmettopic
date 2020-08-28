@@ -35,7 +35,11 @@ export const PortfolioInput = ({ portfolioItems }) => {
         <Grid item xs={12}>
           <div
             style={{
-              backgroundColor: '#d9d9d9',
+              backgroundImage: `url(${imgURL})`,
+              backgroundPosition: 'center',
+              backgroundSize: 'cover',
+              backgroundRepeat: 'no-repeat',
+              width: '600',
               marginTop: '10px',
               padding: '5px',
             }}
