@@ -7,8 +7,17 @@ import StyledHeading from '../../styles/StyledHeading';
 
 function PortfolioData() {
   const [portfolioItems, setPortfolioItems] = React.useState([]);
-  const [newPortfolioItem, setNewPortfolioItem] = React.useState();
+  const [newPortfolioItem_title, setNewPortfolioItem_title] = React.useState();
+  const [newPortfolioItem_desc, setNewPortfolioItem_desc] = React.useState();
 
+  const [
+    newPortfolioItem_imgURL,
+    setNewPortfolioItem_imgURL,
+  ] = React.useState();
+  const [
+    newPortfolioItem_githubLink,
+    setNewPortfolioItem_githubLink,
+  ] = React.useState();
   React.useEffect(() => {
     const fetchdata = async () => {
       const db = firebaseConfig.firestore();
@@ -22,7 +31,12 @@ function PortfolioData() {
 
   const onCreate = () => {
     const db = firebaseConfig.firestore();
-    db.collection('portfolioItems').add({ title: newPortfolioItem });
+    db.collection('portfolioItems').add({
+      title: newPortfolioItem_title,
+      desc: newPortfolioItem_desc,
+      imgURL: newPortfolioItem_imgURL,
+      githubLink: newPortfolioItem_githubLink,
+    });
   };
 
   const styles = {
@@ -44,8 +58,8 @@ function PortfolioData() {
               fontFamily: 'inherit',
               fontSize: 'inherit',
             }}
-            value={newPortfolioItem}
-            onChange={(e) => setNewPortfolioItem(e.target.value)}
+            value={newPortfolioItem_title}
+            onChange={(e) => setNewPortfolioItem_title(e.target.value)}
           />
         </div>
 
@@ -57,6 +71,8 @@ function PortfolioData() {
               fontFamily: 'inherit',
               fontSize: 'inherit',
             }}
+            value={newPortfolioItem_desc}
+            onChange={(e) => setNewPortfolioItem_desc(e.target.value)}
           />
         </div>
         <div style={inputStyle}>
@@ -66,6 +82,8 @@ function PortfolioData() {
               fontFamily: 'inherit',
               fontSize: 'inherit',
             }}
+            value={newPortfolioItem_imgURL}
+            onChange={(e) => setNewPortfolioItem_imgURL(e.target.value)}
           />
         </div>
         <div style={inputStyle}>
@@ -75,6 +93,8 @@ function PortfolioData() {
               fontFamily: 'inherit',
               fontSize: 'inherit',
             }}
+            value={newPortfolioItem_githubLink}
+            onChange={(e) => setNewPortfolioItem_githubLink(e.target.value)}
           />
         </div>
         <div style={{ margin: 10 }}>
@@ -84,7 +104,7 @@ function PortfolioData() {
       <div style={{ paddingTop: '60px' }}>
         <StyledHeading style={styles}>Edit Portfolio Items</StyledHeading>
         {portfolioItems.map((portfolioItems) => (
-          <div key={portfolioItems.title}>
+          <div key={portfolioItems.item}>
             <PortfolioInput portfolioItems={portfolioItems} />
           </div>
         ))}
