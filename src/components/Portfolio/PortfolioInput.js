@@ -12,7 +12,7 @@ export const PortfolioInput = ({ portfolioItems }) => {
     const db = firebaseConfig.firestore();
     db.collection('portfolioItems')
       .doc(portfolioItems.id)
-      .set({ ...portfolioItems, title });
+      .set({ ...portfolioItems, title, desc, imgURL, githubLink });
   };
 
   const onDelete = () => {
