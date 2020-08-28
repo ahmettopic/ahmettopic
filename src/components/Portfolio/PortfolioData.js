@@ -113,7 +113,7 @@ function PortfolioData() {
       <div style={{ paddingTop: '60px' }}>
         <StyledHeading style={styles}>Edit Portfolio Items</StyledHeading>
         {portfolioItems.map((portfolioItems) => (
-          <div key={portfolioItems.item}>
+          <div key={portfolioItems.id}>
             <PortfolioInput portfolioItems={portfolioItems} />
           </div>
         ))}
