@@ -14,11 +14,18 @@ The **SnackBar** should be able to be toggled.
 ### AppBar
 The **AppBar** needs some UI changes, both *desktop* and *mobile* view. The plan is to create a more "friendly" experience. When in *mobile* view the **AppBar** should be placed at bottom of screen so that it's always reachable.
 
+### Dashboard
+- [x] Add Login btn in the **AppBar** so that **Admin** can Login and navigate to /dashboard.
+- [x] SignIn and Logout using Google Firebase.
+- [x] Add, Remove and Edit **Portfolio** items from Google Firebase.
+
 ### Skills
 The **Skills** needs some position fixes.
 
 ### Portfolio
-**Portfolio** will show projects and links to repos.
+Show all of my projects and link to GitHub profile.
+
+- [x] Fetch data from Firebase.
 
 ### Contact
 When in **Contact** the user will be able to send me a message/email. Create some kind of Login/Auth before sending message/email.
@@ -36,7 +43,7 @@ Thank you for viewing my project! The most **important** key for reaching the to
 2. What was less good?
 3. Is there any tips and tricks you want to share?
 
-if you determine, you can find me on **LinkedIn** or email me => ahmettopic@hotmail.com
+if you determine, you can find me on **LinkedIn** or @ ahmettopic@hotmail.com
 
 *Thanks again and have a wonderful day!*
 
