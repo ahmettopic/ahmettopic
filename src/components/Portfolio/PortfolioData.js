@@ -27,6 +27,7 @@ function PortfolioData() {
       );
     };
     fetchdata();
+    console.log();
   }, []);
 
   const onCreate = () => {
@@ -43,7 +44,7 @@ function PortfolioData() {
     fontSize: '18px',
   };
   const inputStyle = {
-    width: '100',
+    width: '300',
     margin: '10px',
   };
 
@@ -55,7 +56,7 @@ function PortfolioData() {
           backgroundPosition: 'center',
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
-          width: '600',
+          width: '100%',
         }}
         value={newPortfolioItem_imgURL}
       >
@@ -63,7 +64,7 @@ function PortfolioData() {
         <div style={inputStyle}>
           <input
             style={{
-              width: '60%',
+              width:"60%",
               fontFamily: 'inherit',
               fontSize: 'inherit',
             }}
@@ -75,7 +76,7 @@ function PortfolioData() {
         <div style={inputStyle}>
           <textarea
             style={{
-              width: '60%',
+              width:"60%",
               height: '10vh',
               fontFamily: 'inherit',
               fontSize: 'inherit',
@@ -87,7 +88,7 @@ function PortfolioData() {
         <div style={inputStyle}>
           <input
             style={{
-              width: '60%',
+              width:"60%",
               fontFamily: 'inherit',
               fontSize: 'inherit',
             }}
@@ -98,7 +99,7 @@ function PortfolioData() {
         <div style={inputStyle}>
           <input
             style={{
-              width: '60%',
+              width:"60%",
               fontFamily: 'inherit',
               fontSize: 'inherit',
             }}

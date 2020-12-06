@@ -9,6 +9,11 @@ class Dashboard extends Component {
   render() {
     return (
       <React.Fragment>
+        <div>
+        <button onClick={() => firebaseConfig.auth().signOut()}>
+              SIGN OUT
+            </button>
+        </div>
         <div
           style={{
             padding: '1em',
@@ -19,10 +24,8 @@ class Dashboard extends Component {
           }}
         >
           <Grid container justify="center">
-            <button onClick={() => firebaseConfig.auth().signOut()}>
-              SIGN OUT
-            </button>
-            <Grid item xs={12}>
+
+            <Grid item xs={5}>
               <PortfolioData />
             </Grid>
           </Grid>
